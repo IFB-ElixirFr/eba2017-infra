@@ -45,7 +45,7 @@ function conda3deactivate () { export PATH=$(echo $PATH | sed "s|/usr/local/geno
 ```
 
 ### User: Usage
-#### In terminal / qlogin
+#### In terminal / `qlogin`
 ```
 conda env list
 source activate eba2017_rnaseq_denovo
