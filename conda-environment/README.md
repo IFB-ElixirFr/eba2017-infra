@@ -23,6 +23,7 @@ Examples:
 ```
 conda create -n eba2017_rnaseq_denovo trinity==2.4.0 kallisto==0.43.0 salmon==0.8.2 trimmomatic==0.36 fastqc==0.11.5 multiqc==0.9 bioconductor-deseq2==1.16.1 bioconductor-edger==3.16.5
 conda create -n eba2017_rnaseq_ref salmon==0.8.2 star==2.5.3a subread==1.5.3 bioconductor-deseq2==1.16.1 bioconductor-tximport==1.4.0 r-readr==0.2.2 r-wasabi==0.2 r-sleuth==0.29.0
+conda create -n eba2017_unix fastqc==0.11.5 bowtie2==2.3.2 bedtools==2.26.0 sickle-trim==1.33 samtools==1.5
 ```
 
 ### Exportation
