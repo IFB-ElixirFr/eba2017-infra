@@ -15,31 +15,21 @@ conda config --add channels bioconda
 ```
 
 ### Creation
-#### 1- Use `conda create` to help you 
-```bash
-conda create --override-channels --channel bioconda --channel conda-forge --channel r -n eba2017_nom_atelier tool2==1.0.0 tool2==1.0.1
-```
 
-Examples:
+eba2017_unix.yaml
+```yaml
+name: eba2017_unix
+channels:
+- bioconda
+- conda-forge
+- defaults
+dependencies:
+- bioconda::bedtools=2.26.0
+- bioconda::bowtie2=2.3.2
+- bioconda::fastqc=0.11.5
+- bioconda::samtools=1.5
+- bioconda::sickle-trim=1.33
 ```
-conda create -n eba2017_rnaseq_denovo trinity==2.4.0 kallisto==0.43.0 salmon==0.8.2 trimmomatic==0.36 fastqc==0.11.5 multiqc==0.9 bioconductor-deseq2==1.16.1 bioconductor-edger==3.16.5
-conda create -n eba2017_rnaseq_ref salmon==0.8.2 star==2.5.3a subread==1.5.3 bioconductor-deseq2==1.16.1 bioconductor-tximport==1.4.0 r-readr==0.2.2 r-wasabi==0.2 r-sleuth==0.29.0
-conda create -n eba2017_unix fastqc==0.11.5 bowtie2==2.3.2 bedtools==2.26.0 sickle-trim==1.33 samtools==1.5
-conda create -n eba2017_long_read fastqc==0.11.5 canu==1.6 prinseq==0.20.4 bwa==0.7.13 pilon==1.22 samtools==1.5 graphmap==0.5.2
-```
-
-#### 2- Exportation
-```
-conda env export -n eba2017_rnaseq_denovo -f eba2017_rnaseq_denovo.yaml
-```
-
-#### 3- Remove dependencies to keep only the requested packages
-```bash
-vi eba2017_rnaseq_denovo.yaml
-```
-
-Maybe we should just indicate the requested package and version without R, perl and python versions.
-We/I should investigate on that.
 
 ### Importation
 ```
