@@ -1,0 +1,26 @@
+name: python27
+channels:
+- https://repo.continuum.io/pkgs/main
+- nlesc
+- main
+- biobuilds
+- bioconda
+- conda-forge
+- defaults
+- r
+dependencies:
+- bcftools=1.3.1=pl5.22.0_1
+- htslib=1.3.2=1
+- openblas=0.2.19=1
+- samtools=1.3.1=py27pl5.22.0_2
+- genomicconsensus=3.0.2=py27_0
+- mummer=3.23=4
+- pbcommand=0.3.29=py27_0
+- pbcore=1.2.10=py27_1
+- pbh5tools=0.8.0=py27_0
+- pysam=0.10.0=py27_3
+- python-consensuscore=1.0.2=boost1.61py27_0
+- quast=4.5=boost1.61_1
+- pip:
+  - consensuscore==1.0.2
+prefix: /data/softwares/anaconda3/envs/python27
