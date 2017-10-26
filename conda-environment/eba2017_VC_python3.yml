@@ -40,7 +40,7 @@ dependencies:
 - samtools=1.1=0
 - smartdenovo=1.0.0=pl5.22.0_1
 - spades=3.11.0=py36_zlib1.2.8_1
-- stacks=1.46=pl5.22.0_0
+- stacks=1.47
 - r-base=3.4.1=0
 - ipython=5.3.0=py36_0
 - openjdk=8.0.121=1
