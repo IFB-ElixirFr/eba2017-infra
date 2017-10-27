@@ -18,9 +18,3 @@ dependencies:
 - pbcommand=0.3.29=py27_0
 - pbcore=1.2.10=py27_1
 - pbh5tools=0.8.0=py27_0
-- pysam=0.10.0=py27_3
-- python-consensuscore=1.0.2=boost1.61py27_0
-- quast=4.5=boost1.61_1
-- pip:
-  - consensuscore==1.0.2
-prefix: /data/softwares/anaconda3/envs/python27
